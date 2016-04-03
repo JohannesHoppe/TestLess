@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/app-bundle.css" />
+    </environment>
+    <environment names="Production">
+        <link rel="stylesheet" href="~/css/app-bundle.min.css" />
+    </environment>
+</head>
+<body>
+    <nav>This is a test</nav>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
+</html>
